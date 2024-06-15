@@ -1,0 +1,146 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+}
+
+body {
+  background-color: #000000;
+  font-family: "Poppins", sans-serif;
+  color: #ffffff;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 0;
+}
+
+.header .logo {
+  width: 100px;
+}
+
+.header nav {
+  display: flex;
+  gap: 20px;
+}
+
+.header nav a {
+  color: #ffffff;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+.product-purchase {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  padding: 50px 0;
+}
+
+.product-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.product-img {
+  max-width: 300px;
+  margin-bottom: 20px;
+}
+
+.product-details h1 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.product-details p {
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+.product-details span {
+  font-size: 20px;
+  color: #ffffff;
+  margin-bottom: 20px;
+}
+
+.purchase-form {
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #1a1a1a;
+  border-radius: 8px;
+}
+
+.purchase-form h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.purchase-form label {
+  font-size: 16px;
+  margin-bottom: 5px;
+  display: block;
+}
+
+.purchase-form input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.purchase-form button {
+  width: 100%;
+  padding: 15px;
+  border: none;
+  background-color: #b60000;
+  color: white;
+  font-size: 18px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.purchase-form button:hover {
+  background-color: #e60000;
+}
+
+.footer {
+  padding: 50px 0;
+  text-align: center;
+}
+
+.footer p {
+  color: #ffffff;
+  font-size: 14px;
+}
+
+.map {
+    filter: grayscale(100%) invert(92%) contrast(93%);
+  }
+
+@media (min-width: 768px) {
+  .product-purchase {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .product-info,
+  .purchase-form {
+    width: 48%;
+  }
+}

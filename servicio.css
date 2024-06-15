@@ -1,0 +1,162 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+}
+
+body {
+  background-color: #000000;
+  font-family: "Poppins", sans-serif;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    position: relative; /* Añadido */
+    z-index: 1; /* Añadido */
+  }
+
+.menu {
+  position: absolute;
+  top: 20px;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: center;
+  z-index: 1000;
+  margin-bottom: 20px; /* Agregar margen inferior */
+}
+
+.navbar {
+  display: flex;
+}
+
+.menu-1 {
+  margin-right: 180px;
+}
+
+.menu .navbar ul li {
+  position: relative;
+  float: left;
+}
+
+.menu .navbar ul li a {
+  font-size: 10px;
+  padding: 20px;
+  color: #FFFFFF;
+  display: block;
+}
+
+.menu .navbar ul li a:hover {
+  color: #b60000;
+}
+
+#menu {
+  display: none;
+}
+
+.menu label {
+  cursor: pointer;
+  display: none;
+}
+
+.header-content {
+  padding: 30px;
+  margin-top: 100px;
+}
+
+.slider {
+    display: flex;
+    align-items: center;
+    margin-top: 100px; /* Cambiar el valor según sea necesario para ajustar la posición */
+  }
+
+.slider-txt {
+  margin-left: 85px;
+  width: 50%;
+}
+
+.slider-txt h1 {
+  font-size: 70px;
+  color: #FFFFFF;
+  text-transform: uppercase;
+  font-weight: 800;
+}
+
+.slider-txt p {
+  font-size: 18px;
+  color: bisque;
+}
+
+.slider-img {
+  width: 50%;
+}
+
+.slider-img img {
+  margin-right: 225px;
+  width: 550px;
+}
+
+@media(max-width: 991px) {
+  .menu {
+    padding: 20px;
+    justify-content: space-between;
+    margin-bottom: 20px; /* Agregar margen inferior */
+  }
+
+  .menu .navbar {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background-color: #181818;
+    display: none;
+    z-index: 999; /* Ajustar el z-index para que aparezca sobre el slider */
+  }
+
+  .menu .navbar ul li {
+    width: 100%;
+  }
+
+  #menu:checked ~ .navbar {
+    display: initial;
+  }
+
+  .header-content {
+    padding: 30px;
+    margin-top: 100px;
+  }
+
+  .slider {
+    flex-direction: column;
+    margin-top: 20px; /* Agregar margen superior */
+  }
+
+  .slider-txt {
+    margin-left: 0;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 50px;
+  }
+
+  .slider-txt h1 {
+    font-size: 50px;
+  }
+
+  .slider-txt p {
+    font-size: 16px;
+  }
+
+  .slider-img {
+    width: 100%;
+  }
+
+  .slider-img img {
+    margin-right: 0;
+    width: 100%;
+  }
+}
