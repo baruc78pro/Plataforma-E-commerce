@@ -21,10 +21,15 @@ Create database if not exists tienda;
 use tienda;
 
 CREATE TABLE productos (
+  
   id int(11) NOT NULL,
+  
   nombre varchar(55) NOT NULL,
+  
   precio char(2) NOT NULL,
+  
   foto varchar(500) NOT NULL
+  
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 INSERT INTO productos (id, nombre, precio, foto) VALUES
