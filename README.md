@@ -16,7 +16,7 @@ Es importante tener Xampp en el equipo, el proyecto debe de estar dentro de la c
 
 Script de la base de datos:
 
-[2:21 p.m., 7/6/2024] Baruc: Create database if not exists tienda;
+Create database if not exists tienda;
 
 use tienda;
 
@@ -28,11 +28,19 @@ CREATE TABLE productos (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 INSERT INTO productos (id, nombre, precio, foto) VALUES
+
 (1, 'Burrito', '23', 'images/food5.png'),
+
 (2, 'Hamburguesa americana', '50', 'images/food1.png'),
+
 (3, 'Hamburguesa doble', '34', 'images/food2.png'),
+
 (4, 'Hamburguesa americana', '50', 'images/food3.png'),
+
 (5, 'Hamburguesa doble', '34', 'images/food4.png');
-[2:22 p.m., 7/6/2024] Baruc: ALTER TABLE productos
-  MODIFY id int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
-COMMIT;
+
+ ALTER TABLE productos
+ 
+ MODIFY id int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
+ 
+ COMMIT;
