@@ -14,6 +14,7 @@ Plataforma para practicas, esta echo en HTML, CSS, JavaScript, PHP y MySql.
 
 Es importante tener Xampp en el equipo, el proyecto debe de estar dentro de la carpeta de htdocs dentro de la carpeta de Xampp para que funcione,
 
+------------------------------------------------------------------------------------------------
 Script de la base de datos:
 
 Create database if not exists tienda;
