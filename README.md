@@ -6,7 +6,7 @@ Link del autor responsable de la página principal y los assets:
 
 https://youtu.be/5rl4HzQXLRA?si=zduyxWvoxIIYUDMn
 
-*Las unicas modificaciones echas por Malware Inc son la inclusión de los otros apartados y la base de datos*
+*Las unicas modificaciones echas por Malware Inc son la inclusión de los otros apartados y la base de datos, los creditos al creador DIVCODE*
 
 [![foto-web-1.png](https://i.postimg.cc/90cXH55D/foto-web-1.png)](https://postimg.cc/WFfc0y4V)
 
